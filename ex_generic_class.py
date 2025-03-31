@@ -8,12 +8,12 @@
 db = 'G16.db'
 
 #Uncomment to test class Customer (select next 4 lines and press ctrl-1)
-# from classes.class_customer import Customer
-# test_class = Customer
-# ob = '1,António;email@up.pt;2025-02-09'
-# db = 'G16.db'
+from classes.class_customer import Customer
+test_class = Customer
+ob = '1,António;email@up.pt;2025-02-09'
+db = 'G16.db'
 
-# #Uncomment to test class Devices (select next two lines and press ctrl-1)
+# # #Uncomment to test class Devices (select next two lines and press ctrl-1)
 # from classes.class_devices import Devices
 # test_class = Devices
 # ob = '600;Xavier;linux'
@@ -25,25 +25,29 @@ db = 'G16.db'
 
 
 
-#Uncomment to test class Subscriptions
-from classes.class_subscriptions import Subscriptions
-from classes.class_customer import Customer
-from classes.class_devices import Devices
-Customer.read('data/G16.db')
-Devices.read('data/G16.db')
-Subscriptions.read('data/G16.db')
-test_class = Subscriptions
+# # #Uncomment to test class Subscriptions
+# from classes.class_subscriptions import Subscriptions
+# from classes.class_customer import Customer
+# from classes.class_devices import Devices
+# Customer.read('data/G16.db')
+# Devices.read('data/G16.db')
+# Subscriptions.read('data/G16.db')
+# test_class = Subscriptions
 
 
 
-#Uncomment to test class Subs_Plans
-from classes.class_subs_plans import Subs_Plans
-from classes.class_subscriptions import Subscriptions
-from classes.class_plans import Plans
-Subscriptions.read('data/G16.db')
-Plans.read('data/G16.db')
-Subs_Plans.read('data/G16.db')
-test_class = Subs_Plans
+# #Uncomment to test class Subs_Plans
+# from classes.class_subs_plans import Subs_Plans
+# from classes.class_subscriptions import Subscriptions
+# from classes.class_plans import Plans
+# from classes.class_customer import Customer
+# from classes.class_devices import Devices
+# Customer.read('data/G16.db')
+# Devices.read('data/G16.db')
+# Subscriptions.read('data/G16.db')
+# Plans.read('data/G16.db')
+# Subs_Plans.read('data/G16.db')
+# test_class = Subs_Plans
 
 import datetime
 
