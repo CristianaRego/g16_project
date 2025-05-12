@@ -12,7 +12,7 @@ from subs.apps_userlogin import apps_userlogin
 app = Flask(__name__)
 
 Devices.read(filename + 'G16.db')
-Customer.read('data/G16.db')
+Customer.read(filename + 'data/G16.db')
 Plans.read(filename + 'G16.db')
 Subscriptions.read(filename + 'G16.db')
 Userlogin.read(filename + 'G16.db')
