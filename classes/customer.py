@@ -32,8 +32,7 @@ class Customer(Gclass):
             Customer.obj[id] = self
             Customer.lst.append(id)
         else:
-            # print('Device ', devices_id, ' not found')
-            pass
+            print('Device ', devices_id, ' not found')
     
     # Object properties
     @property

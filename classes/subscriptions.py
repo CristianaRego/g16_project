@@ -39,8 +39,7 @@ class Subscriptions(Gclass):
             else:
                 print('Plans ', plans_id, ' not found')
         else:
-            pass
-            # print('Customer ', customer_id, ' not found')
+            print('Customer ', customer_id, ' not found')
     # Object properties
     # id property getter method
     @property
