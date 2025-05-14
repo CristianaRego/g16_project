@@ -13,6 +13,7 @@ app = Flask(__name__)
 
 Devices.read(filename + 'G16.db')
 Customer.read(filename + 'G16.db')
+Customer.read(filename + 'G16.db')
 Plans.read(filename + 'G16.db')
 Subscriptions.read(filename + 'G16.db')
 Userlogin.read(filename + 'G16.db')
