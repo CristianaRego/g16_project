@@ -12,11 +12,11 @@ class Subscriptions(Gclass):
     pos = 0
     sortkey = ''
     # class attributes, identifier id, attribute must be the first on the list
-    att = ['_id', '_plans_id', '_customer_id', '_start_date', '_status']
+    att = ['_id', '_customer_id', '_plans_id', '_start_date', '_status']
     # Class header title
     header = 'Subscriptions'
     # field description for use in, for example, input form
-    des = ['Id','Plans_Id','Customer_Id', 'Start_Date', 'Status']
+    des = ['Id', 'Customer_Id', 'Plans_Id', 'Start_Date', 'Status']
     # Constructor: Called when an object is instantiated
     def __init__(self, id, plans_id, customer_id, start_date, status):
         super().__init__()

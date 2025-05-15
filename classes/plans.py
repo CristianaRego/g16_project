@@ -12,7 +12,7 @@ class Plans(Gclass):
     # Class header title
     header = 'Plans'
     # field description for use in, for example, input form
-    des = ['Id','Name','Data_Limit', 'Monthly_Fee:']
+    des = ['Id','Name','Data_Limit', 'Monthly_Fee']
     # Constructor: Called when an object is instantiated
     def __init__(self, id, plans_name, data_limit, monthly_fee):
         super().__init__()
