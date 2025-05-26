@@ -12,6 +12,7 @@ import subs.subs_customerFoto as customerfsub
 import os
 from subs.apps_plot import apps_plot
 
+
 app = Flask(__name__)
 
 Devices.read(filename + 'G16.db')
@@ -57,6 +58,7 @@ def subform(cname):
 @app.route("/plot", methods=["post","get"])
 def plot():
     return apps_plot()
+
 
 @app.route("/Userlogin", methods=["post","get"])
 def userlogin():
