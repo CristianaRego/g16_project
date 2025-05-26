@@ -9,15 +9,15 @@ class Customer(Gclass):
     pos = 0
     sortkey = ''
     # class attributes, identifier attribute 'id' must be the first on the list
-    att = ['_id', 'devices_id', 'name', '_email', '_signup_date']
+    att = ['_id', 'devices_id', 'name', '_email', '_signup_date', '_foto']
     # Class header title
     header = 'Customer'
     # field description for use in, for example, input form
-    des = ['Id', 'Devices_Id', 'Name', 'Email', 'Signup_Date']
+    des = ['Id', 'Devices_Id', 'Name', 'Email', 'Signup_Date', 'Foto']
     # Constructor: Called when an object is instantiated
 
 
-    def __init__(self, id, devices_id, name, email, signup_date):
+    def __init__(self, id, devices_id, name, email, signup_date, foto):
         super().__init__()
         # Object attributes
         id = Customer.get_id(id)
@@ -28,6 +28,7 @@ class Customer(Gclass):
             self._email = email
             temp = list(map(int,signup_date.split('/')))
             self._signup_date = datetime.date(temp[0],temp[1],temp[2])
+            self._foto= foto
             # Add the new object to the Customer's list
             Customer.obj[id] = self
             Customer.lst.append(id)
@@ -47,7 +48,6 @@ class Customer(Gclass):
     def name(self):
         return self._name
     
-
     @property
     def email(self):
         return self._email
@@ -55,6 +55,10 @@ class Customer(Gclass):
     @property
     def signup_date(self):
         return self._signup_date
+    
+    @property
+    def foto(self):
+        return self._foto
     
     @id.setter 
     def id(self,new_id):
@@ -80,3 +84,7 @@ class Customer(Gclass):
     def signup_date(self,new_signup_date):
         self._signup_date = new_signup_date
         return self._signup_date
+    
+    @foto.setter 
+    def foto(self,foto):
+        self._foto=foto
